@@ -44,7 +44,7 @@ def _load_anima_lllite_apply():
     module = importlib.util.module_from_spec(spec)
     sys.modules[package_name] = module
     spec.loader.exec_module(module)
-    _ANIMA_LLLITE_APPLY = module.NODE_CLASS_MAPPINGS["AnimaLLLiteApply"]()
+    _ANIMA_LLLITE_APPLY = module.NODE_CLASS_MAPPINGS["AnimaLLLiteApply_sdscripts"]()
     return _ANIMA_LLLITE_APPLY
 
 
